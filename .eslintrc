@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "standard",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/babel",
+    "prettier/react"
+  ],
+  "plugins": ["@typescript-eslint", "babel", "prettier", "react"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "curly": ["error", "all"],
+    "max-len": ["error", { "code": 80, "ignoreUrls": true }]
+  }
+}
